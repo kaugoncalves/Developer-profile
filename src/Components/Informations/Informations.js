@@ -10,6 +10,7 @@ export const Informations = (props) => {
     flex-direction: column; 
     justify-content: center;
     background-color: rgb(37, 37, 37);
+    box-shadow: -1px 4px 20px -6px black;
     min-width:34rem;
     max-width:34rem;
     `
@@ -27,6 +28,7 @@ export const Informations = (props) => {
     const IdDiv = styled.div`
     justify-content: center;
     display:flex;
+    color: rgba(255, 255, 255, 0.600);
     `
 
     const BioDiv = styled.div`
@@ -46,7 +48,7 @@ export const Informations = (props) => {
             <InformationsLayout>
 
                 <ImgLayout>
-                    <img src={props.avatar} style={{ borderRadius: '50%', width: '300px' }} />
+                    <img src={props.avatar} style={{ borderRadius: '50%', width: '300px', boxShadow: '-1px 4px 20px -6px black' }} />
                 </ImgLayout>
 
                 <NameDiv> {props.name}  </NameDiv>

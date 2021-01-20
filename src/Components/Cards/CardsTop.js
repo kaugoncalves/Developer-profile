@@ -40,9 +40,9 @@ export const CardsTop = (props) => {
 
   const FlipCardSeguidores = () => {
 
-    return <Columns style={{ backgroundColor: 'rgb(37, 37, 37)' }}>
+    return <Columns style={{ backgroundColor: 'rgb(37, 37, 37)', boxShadow: '-1px 4px 20px -6px black' }}>
 
-      <Content>
+      <Content style={{}}>
         <PushpinFilled style={{ fontSize: '250%' }} /> Seguidores:
       <div style={{ fontSize: '40px', margin: '5px' }}>
           <CountTo to={props.seguidores} speed={1200} />
@@ -54,7 +54,7 @@ export const CardsTop = (props) => {
 
   const FlipCardSeguindo = () => {
 
-    return <Columns style={{ backgroundColor: 'rgb(37, 37, 37)' }}>
+    return <Columns style={{ backgroundColor: 'rgb(37, 37, 37)' , boxShadow: '-1px 4px 20px -6px black' }}>
       <Content>
         <FlagFilled style={{ fontSize: '250%' }} />  Seguindo:
         <div style={{ fontSize: '40px', margin: '5px' }}> <CountTo to={props.seguindo} speed={1200} />
