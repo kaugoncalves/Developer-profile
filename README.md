@@ -15,11 +15,15 @@
 - Rode o comando "npm install"
 - Logo após rode o comando "npm start" que o site abrirá em seu navegador padrão
 
-# Technologies 🖥️
+# Tecnologias 🖥️
 - React.js
 - Css
 - Ant design 
 - React count to
 - Styled components
 - Axios
+
+# Testando ⚠
+- https://kaugoncalves.github.io/Developer-profile/
+
 
