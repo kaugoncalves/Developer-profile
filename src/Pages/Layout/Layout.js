@@ -100,7 +100,7 @@ export const Layout = () => {
     display: grid;
     place-items: center;
     background: linear-gradient(to right top,#5f3185 0%, #0b1d49 100%);
-    height: 104vh;
+    height: 104.5vh;
     `
 
     const Profile = styled.div`
