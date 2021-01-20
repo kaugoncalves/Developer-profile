@@ -30,7 +30,7 @@ export const Layout = () => {
 
     const getUserData = () => {
 
-        axios.get('https://api.github.com/users/mtsmachado8') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM BAIXO
+        axios.get('https://api.github.com/users/theusf') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM BAIXO
             .then(function (response) {
                 setUserData(response.data);
                 // console.log(response.data);
@@ -43,7 +43,7 @@ export const Layout = () => {
 
     const getUserRepos = () => {
 
-        axios.get('https://api.github.com/users/mtsmachado8/repos') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM CIMA
+        axios.get('https://api.github.com/users/theusf/repos') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM CIMA
             .then(function (response) {
                 setUserRepos(response.data);
                 // console.log(response.data);
@@ -144,8 +144,8 @@ export const Layout = () => {
                     <CardsTop
                         login={userData.login}
                         repositorios={userData.public_repos}
-                        seguindo={userData.followers}
-                        seguidores={userData.following}>
+                        seguindo={userData.following}
+                        seguidores={userData.followers}>
                     </CardsTop>
 
                     <CardsBottom

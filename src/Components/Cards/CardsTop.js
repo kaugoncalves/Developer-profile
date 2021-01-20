@@ -70,7 +70,8 @@ export const CardsTop = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <Content> <BookFilled style={{ fontSize: '250%' }} />  Repositórios: <div style={{ fontSize: '40px', margin: '5px' }}> <CountTo start={0} to={props.repositorios ? props.repositorios : <b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b>} speed={1200} />  </div> </Content>
+            <Content> <BookFilled style={{ fontSize: '250%' }} />  Repositórios: <div style={{ fontSize: '40px', margin: '5px' }}> 
+            <CountTo start={0} to={props.repositorios ? props.repositorios : <b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b>} speed={1200} />  </div> </Content>
           </div>
           <div class="flip-card-back">
             <h2>Repositórios públicos</h2>
