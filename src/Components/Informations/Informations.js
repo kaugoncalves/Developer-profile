@@ -10,7 +10,8 @@ export const Informations = (props) => {
     flex-direction: column; 
     justify-content: center;
     background-color: rgb(37, 37, 37);
-
+    min-width:34rem;
+    max-width:34rem;
     `
 
     const ImgLayout = styled.div`
@@ -30,6 +31,7 @@ export const Informations = (props) => {
 
     const BioDiv = styled.div`
     padding-top:5%;
+    
     `
     const EmailDiv = styled.div`
     padding-top:2%;
