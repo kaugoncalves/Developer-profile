@@ -11,8 +11,8 @@ export const Informations = (props) => {
     justify-content: center;
     background-color: rgb(37, 37, 37);
     box-shadow: -1px 4px 20px -6px black;
-    min-width:25rem;
-    max-width:25rem;
+    min-width:26rem;
+    max-width:26rem;
     min-height:30.2rem;
     max-height:30.2rem;
     `
