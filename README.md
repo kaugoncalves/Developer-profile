@@ -1,6 +1,6 @@
 # 👤 Developer profile 👤
 
-### Website feito em React.js utilizando api do GitHub
+### Website feito em React.js utilizando api do GitHub 📡
 
 
 ![](https://github.com/kaugoncalves/Developer-profile/blob/master/print1.png?raw=true)
