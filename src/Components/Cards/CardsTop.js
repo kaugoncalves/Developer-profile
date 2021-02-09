@@ -18,6 +18,7 @@ export const CardsTop = (props) => {
     padding-bottom: 8%;
     margin-right:2rem;
     margin-left:5rem;
+
     `
 
   const Columns = styled.div`
@@ -75,7 +76,7 @@ export const CardsTop = (props) => {
           </div>
           <div class="flip-card-back">
             <h2>Repositórios públicos</h2>
-            <h2> {props.repositorios ? props.repositorios : 0} ao todo📝</h2>
+            <h2 style={{ fontSize: '100%' }}> {props.repositorios ? props.repositorios : 0} ao todo📝</h2>
             <a href={`https://github.com/${loginUsua}?tab=repositories`}> <button class="button" type='primary'>
               <Github style={{ width: '20%' }} /> Ver no Github </button>
             </a>

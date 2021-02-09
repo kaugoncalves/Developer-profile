@@ -17,6 +17,7 @@ export const CardsBottom = (props) => {
     padding-bottom: 12.5%;
     margin-right:2rem;
     margin-left:5rem;
+    height:12rem;
     `
   const CardArea = styled.div`
     height: 13rem;
@@ -48,7 +49,7 @@ export const CardsBottom = (props) => {
           </div>
           <div class="flip-card-back">
             <h2>{props.nameRepos}</h2>
-            <p style={{ fontSize: '17px' }}>Total de estrelas: <b> {props.starsRepos}⭐</b></p>
+            <p style={{ fontSize: '100%' }}>Total de estrelas: <b> {props.starsRepos}⭐</b></p>
             <a href={`https://github.com/${login}/${proj}`}>  <button class="button" type='primary'> <Github style={{ width: '20%' }} /> Ver no Github </button> </a>
           </div>
         </div>
@@ -67,7 +68,7 @@ export const CardsBottom = (props) => {
           </div>
           <div class="flip-card-back">
             <h1>Onde trabalha</h1>
-            <h2> {props.company ? props.company : <b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b>} </h2>
+            <h2 style={{ fontSize: '100%' }}>  {props.company ? props.company : <b>Nada por aqui <FrownOutlined style={{ fontSize: '100%' }} /></b>} </h2>
           </div>
         </div>
       </div>
@@ -84,8 +85,8 @@ export const CardsBottom = (props) => {
             <ContentCard> <Html5Outlined style={{ fontSize: '250%', color: 'white' }} /> Liguagem mais usada  </ContentCard>
           </div>
           <div class="flip-card-back">
-            <h2>Linguagem mais usada</h2>
-            <h2> {props.linguagemMaisUsada} </h2>
+            <h2 >Linguagem mais usada</h2>
+            <h2 style={{ fontSize: '150%' }}> {props.linguagemMaisUsada} </h2>
           </div>
         </div>
       </div>

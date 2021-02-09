@@ -100,7 +100,11 @@ export const Layout = () => {
     display: grid;
     place-items: center;
     background: linear-gradient(to right top,#5f3185 0%, #0b1d49 100%);
-    height: 104.5vh;
+    max-width: 100%;
+    max-height: 100%;
+    height:100vh;
+    width:100%;
+    background-color:red;
     `
 
     const Profile = styled.div`
@@ -108,8 +112,10 @@ export const Layout = () => {
     align-items: center;
     justify-content: center;
     margin-top: -20px;
-    height: 90%;
-    width: 90%;
+    height:30%;
+    width:30%;
+    max-width: 100%;
+    max-height: 100%;
     color: white;
     `
 

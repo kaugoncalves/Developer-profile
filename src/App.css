@@ -12,6 +12,7 @@
     text-align: center;
     transition: transform 0.4s;
     transform-style: preserve-3d;
+    
   }
   
 
@@ -43,8 +44,11 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
-    flex-direction: column;
+    flex-direction: column; 
     box-shadow: -1px 4px 20px -6px black;
+    max-height: 100%;
+    max-width: 100%;
+
   }
 
   .button {
