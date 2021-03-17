@@ -45,11 +45,12 @@ export const CardsBottom = (props) => {
       <div class="flip-card ">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <ContentCard><BugFilled style={{ fontSize: '250%', color: 'white' }} /> Projeto mais famoso </ContentCard>
+            <ContentCard><BugFilled style={{ fontSize: '2.5rem', color: 'white'}} /> Projeto mais famoso </ContentCard>
           </div>
-          <div class="flip-card-back">
-            <h2>{props.nameRepos}</h2>
-            <p style={{ fontSize: '100%' }}>Total de estrelas: <b> {props.starsRepos}⭐</b></p>
+          <div class="flip-card-back" >
+            <h1 style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Repositório: </h1>
+            <span style={{ fontSize: '1rem' }}>{props.nameRepos}</span>
+            <p style={{ fontSize: '0.8rem' }}>Total de estrelas: <b> {props.starsRepos}⭐</b></p>
             <a href={`https://github.com/${login}/${proj}`}>  <button class="button" type='primary'> <Github style={{ width: '20%' }} /> Ver no Github </button> </a>
           </div>
         </div>
@@ -64,11 +65,11 @@ export const CardsBottom = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <ContentCard> <WalletFilled style={{ fontSize: '250%', color: 'white' }} />  Companhia  </ContentCard>
+            <ContentCard> <WalletFilled style={{ fontSize: '2.5rem', color: 'white' }} />  Companhia  </ContentCard>
           </div>
           <div class="flip-card-back">
-            <h1>Onde trabalha</h1>
-            <h2 style={{ fontSize: '100%' }}>  {props.company ? props.company : <b>Nada por aqui <FrownOutlined style={{ fontSize: '100%' }} /></b>} </h2>
+            <h1 style={{ fontSize: '1.5rem', paddingBottom: '2rem'}}>Onde trabalha:</h1>
+            <h2 style={{ fontSize: '0.9rem' }}>  {props.company ? props.company : <b style={{ fontSize: '1.3rem' }}>Nada por aqui <FrownOutlined style={{ fontSize: '100%' }} /></b>} </h2>
           </div>
         </div>
       </div>
@@ -82,11 +83,11 @@ export const CardsBottom = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <ContentCard> <Html5Outlined style={{ fontSize: '250%', color: 'white' }} /> Liguagem mais usada  </ContentCard>
+            <ContentCard> <Html5Outlined style={{ fontSize: '2.5rem', color: 'white' }} /> Liguagem mais usada  </ContentCard>
           </div>
           <div class="flip-card-back">
-            <h2 >Linguagem mais usada</h2>
-            <h2 style={{ fontSize: '150%' }}> {props.linguagemMaisUsada} </h2>
+            <h2 style={{ fontSize: '1.3rem' }}>Linguagem mais usada:</h2>
+            <h2 style={{ fontSize: '1.5rem' }}> {props.linguagemMaisUsada} </h2>
           </div>
         </div>
       </div>
@@ -101,10 +102,10 @@ export const CardsBottom = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <ContentCard> <Html5Outlined style={{ fontSize: '250%', color: 'white' }} /> Liguagem mais usada  </ContentCard>
+            <ContentCard> <Html5Outlined style={{ fontSize: '2.5rem', color: 'white' }} /> Liguagem mais usada:  </ContentCard>
           </div>
           <div class="flip-card-back">
-            <h1><b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b></h1>
+            <h1><b style={{ fontSize: '1.3rem' }}>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b></h1>
           </div>
         </div>
       </div>
@@ -115,10 +116,10 @@ export const CardsBottom = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <ContentCard> <Html5Outlined style={{ fontSize: '250%', color: 'white' }} /> Liguagem mais usada  </ContentCard>
+            <ContentCard> <Html5Outlined style={{ fontSize: '2.5rem', color: 'white' }} /> Liguagem mais usada:  </ContentCard>
           </div>
           <div class="flip-card-back">
-            <h1><b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b></h1>
+            <h1><b style={{ fontSize: '1.3rem' }}>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b></h1>
           </div>
         </div>
       </div>

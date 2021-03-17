@@ -72,10 +72,10 @@ export const CardsTop = (props) => {
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <Content> <BookFilled style={{ fontSize: '250%' }} />  Repositórios: <div style={{ fontSize: '40px', margin: '5px' }}> 
-            <CountTo start={0} to={props.repositorios ? props.repositorios : <b>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b>} speed={1200} />  </div> </Content>
+            <CountTo start={0} to={props.repositorios ? props.repositorios : <b style={{ fontSize: '1.3rem' }}>Nada por aqui <FrownOutlined style={{ fontSize: '20px' }} /></b>} speed={1200} />  </div> </Content>
           </div>
           <div class="flip-card-back">
-            <h2>Repositórios públicos</h2>
+            <h2>Repositórios públicos:</h2>
             <h2 style={{ fontSize: '100%' }}> {props.repositorios ? props.repositorios : 0} ao todo📝</h2>
             <a href={`https://github.com/${loginUsua}?tab=repositories`}> <button class="button" type='primary'>
               <Github style={{ width: '20%' }} /> Ver no Github </button>

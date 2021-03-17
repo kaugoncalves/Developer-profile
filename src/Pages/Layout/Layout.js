@@ -11,26 +11,47 @@ import "../../App.css";
 
 
 export const Layout = () => {
-    const [userData, setUserData] = useState(0);
+    const [userData, setUserData] = useState({});
     const [projPrincipal, setPrincipalProj] = useState(0);
     const [userRepos, setUserRepos] = useState(0);
     const [userLanguage, setLanguageRepos] = useState(0);
+    const [userName, setUserName] = useState("");
 
+
+    useEffect(() => {   
+        if(userName){
+            getUserData();
+            getUserRepos();
+        }
+    }, [userName]);
 
     useEffect(() => {
-        getUserData();
-        getUserRepos();
+        getUserName();
     }, []);
 
-    useEffect(() => {
+    useEffect(() => {   
         getStarsRepos();
         getLanguageRepos();
     }, [userRepos]);
 
 
-    const getUserData = () => {
+    function getUserName(){
+        var user;
+        var hasClosed = false;
 
-        axios.get('https://api.github.com/users/kaugoncalves') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM BAIXO
+        while(user === null || user === undefined)
+        {
+            user = prompt('Digite seu login do Github', 'kaugoncalves')
+            setUserName(user);
+            console.log(userName);
+            hasClosed=true;
+        }
+    }
+
+
+    async function getUserData() {
+
+        await axios.get(`https://api.github.com/users/${userName}`) //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM BAIXO
             .then(function (response) {
                 setUserData(response.data);
                 // console.log(response.data);
@@ -43,9 +64,10 @@ export const Layout = () => {
 
     const getUserRepos = () => {
 
-        axios.get('https://api.github.com/users/kaugoncalves/repos') //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM CIMA
+        axios.get(`https://api.github.com/users/${userName}/repos`) //<<<<<<< CASO QUEIRA MUDAR O USER, COLOQUE O LOGIN AQUI E LA EM CIMA
             .then(function (response) {
                 setUserRepos(response.data);
+                
                 // console.log(response.data);
             })
             .catch(function (error) {
@@ -54,7 +76,7 @@ export const Layout = () => {
     }
 
 
-    function getStarsRepos() { //pegando projeto com amior número de estrelas
+    function getStarsRepos() { //pegando projeto com maior número de estrelas
         var maior = -1;
 
         for (var i = 0; i < userRepos.length; i++)
@@ -94,7 +116,7 @@ export const Layout = () => {
         }
     }
 
-
+    
 
     const Structure = styled.div`
     display: grid;
@@ -129,7 +151,7 @@ export const Layout = () => {
     flex-direction: column;
     `
 
-    return userData && userRepos ? (
+    return userData && userRepos && userName ? (
         <Structure>
 
             <Profile>
