@@ -10,6 +10,7 @@ export const Informations = (props) => {
     flex-direction: column; 
     justify-content: center;
     background-color: rgb(37, 37, 37);
+    padding: 1rem 1rem;
     box-shadow: -1px 4px 20px -6px black;
     min-width:26rem;
     max-width:26rem;
