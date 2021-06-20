@@ -10,7 +10,7 @@
 ![](https://github.com/kaugoncalves/Developer-profile/blob/master/print3.png?raw=true)
 
 # Como baixar ⬇
-- Instale o projeto em sua máquina
+- Baixe o projeto em sua máquina
 - Abra o terminal
 - Rode o comando "npm install"
 - Logo após rode o comando "npm start" que o site abrirá em seu navegador padrão
